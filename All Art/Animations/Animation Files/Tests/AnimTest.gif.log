@@ -1,0 +1,22 @@
+C:/Program Files/Krita (x64)/bin/ffmpeg.exe -hide_banner -y -y -r 24 -start_number 0 -start_number_range 1 -i C:/Users/mlsfn/Pictures/frame%04d.png -i C:/Users/mlsfn/Pictures/KritaTempPalettegen_%06d.png -lavfi [0:v][1:v]paletteuse=dither=sierra2_4a:diff_mode=none -f gif -loop 0 -gifflags +transdiff C:/Users/mlsfn/Pictures/AnimTest.gif
+=====================================================
+Input #0, image2, from 'C:/Users/mlsfn/Pictures/frame%04d.png':
+  Duration: 00:00:01.48, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgba(pc), 1920x1080 [SAR 3937:3937 DAR 16:9], 25 fps, 25 tbr, 25 tbn, 25 tbc
+Input #1, image2, from 'C:/Users/mlsfn/Pictures/KritaTempPalettegen_%06d.png':
+  Duration: 00:00:00.04, start: 0.000000, bitrate: N/A
+  Stream #1:0: Video: png, rgba(pc), 16x16 [SAR 1:1 DAR 1:1], 25 fps, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 (png) -> paletteuse:default
+  Stream #1:0 (png) -> paletteuse:palette
+  paletteuse -> Stream #0:0 (gif)
+Press [q] to stop, [?] for help
+[image2 @ 000001e043713940] Thread message queue blocking; consider raising the thread_queue_size option (current value: 8)
+Output #0, gif, to 'C:/Users/mlsfn/Pictures/AnimTest.gif':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: gif, pal8(pc, gbr/unknown/unknown, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 24 fps, 100 tbn (default)
+    Metadata:
+      encoder         : Lavc58.134.100 gif
+frame=    1 fps=0.0 q=-0.0 size=       0kB time=00:00:00.01 bitrate=   0.0kbits/s speed=0.273x    frame=   15 fps=0.0 q=-0.0 size=      19kB time=00:00:00.59 bitrate= 260.7kbits/s speed=1.05x    frame=   30 fps= 27 q=-0.0 size=      29kB time=00:00:01.22 bitrate= 196.3kbits/s speed=1.11x    frame=   37 fps= 27 q=-0.0 Lsize=      50kB time=00:00:01.51 bitrate= 272.3kbits/s speed=1.09x    
+video:50kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.038926%

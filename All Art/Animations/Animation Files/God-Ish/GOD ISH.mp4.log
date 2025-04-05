@@ -1,0 +1,31 @@
+C:/Program Files/Krita (x64)/bin/ffmpeg.exe -hide_banner -y -y -r 24 -start_number 0 -start_number_range 1 -i C:/Users/mlsfn/Downloads/frame%04d.png -ss 0:0:0.000 -t 0:0:14.268 -i C:/Users/mlsfn/Downloads/videoplayback.wav -c:v libopenh264 -b:v 5000k C:/Users/mlsfn/Downloads/GOD ISH.mp4
+=====================================================
+Input #0, image2, from 'C:/Users/mlsfn/Downloads/frame%04d.png':
+  Duration: 00:00:13.92, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgba(pc), 1920x1080 [SAR 3937:3937 DAR 16:9], 25 fps, 25 tbr, 25 tbn, 25 tbc
+Input #1, matroska,webm, from 'C:/Users/mlsfn/Downloads/videoplayback.wav':
+  Metadata:
+    encoder         : google/video-file
+  Duration: 00:00:38.84, start: -0.007000, bitrate: 136 kb/s
+  Stream #1:0(eng): Audio: opus, 48000 Hz, stereo, fltp (default)
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libopenh264))
+  Stream #1:0 -> #0:1 (opus (native) -> aac (native))
+Press [q] to stop, [?] for help
+[image2 @ 0000018f84cae480] Thread message queue blocking; consider raising the thread_queue_size option (current value: 8)
+[libopenh264 @ 0000018f84ccc540] Slice count will be set automatically
+[libopenh264 @ 0000018f84ccc540] [OpenH264] this = 0x0000018F85F3B910, Warning:bEnableFrameSkip = 0,bitrate can't be controlled for RC_QUALITY_MODE,RC_BITRATE_MODE and RC_TIMESTAMP_MODE without enabling skip frame.
+Output #0, mp4, to 'C:/Users/mlsfn/Downloads/GOD ISH.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 5000 kb/s, 24 fps, 12288 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 libopenh264
+    Side data:
+      cpb: bitrate max/min/avg: 5000000/0/5000000 buffer size: 0 vbv_delay: N/A
+  Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc58.134.100 aac
+frame=    1 fps=0.0 q=-0.0 size=       0kB time=00:00:00.00 bitrate=4740.7kbits/s speed=0.000582x    frame=   62 fps=0.0 q=-0.0 size=       0kB time=00:00:02.54 bitrate=   0.2kbits/s speed=3.98x    frame=  123 fps=108 q=-0.0 size=     256kB time=00:00:05.08 bitrate= 412.6kbits/s speed=4.46x    frame=  187 fps=114 q=-0.0 size=     512kB time=00:00:07.75 bitrate= 541.2kbits/s speed=4.73x    frame=  250 fps=116 q=-0.0 size=     768kB time=00:00:10.37 bitrate= 606.4kbits/s speed=4.83x    frame=  314 fps=118 q=-0.0 size=    1024kB time=00:00:13.04 bitrate= 643.2kbits/s speed=4.92x    frame=  348 fps=119 q=-0.0 Lsize=    1296kB time=00:00:14.45 bitrate= 734.3kbits/s speed=4.96x    
+video:1063kB audio:225kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.656029%
+[aac @ 0000018f84cd0fc0] Qavg: 159.843

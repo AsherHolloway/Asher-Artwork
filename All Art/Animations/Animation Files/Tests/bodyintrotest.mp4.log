@@ -1,0 +1,42 @@
+C:/Program Files/Krita (x64)/bin/ffmpeg.exe -hide_banner -y -y -r 24 -start_number 0 -start_number_range 1 -i C:/Users/mlsfn/Pictures/frame%04d.png -ss 0:0:0.000 -t 0:0:3.157 -i C:/Users/mlsfn/Downloads/videoplaybacks.wav -c:v libopenh264 -b:v 5000k C:/Users/mlsfn/Pictures/bodyintrotest.mp4
+=====================================================
+Input #0, image2, from 'C:/Users/mlsfn/Pictures/frame%04d.png':
+  Duration: 00:00:03.08, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgba(pc), 1920x1080 [SAR 3937:3937 DAR 16:9], 25 fps, 25 tbr, 25 tbn, 25 tbc
+Input #1, mov,mp4,m4a,3gp,3g2,mj2, from 'C:/Users/mlsfn/Downloads/videoplaybacks.wav':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    creation_time   : 2024-09-06T22:05:34.000000Z
+    encoder         : Google
+  Duration: 00:00:39.36, start: 0.000000, bitrate: 129 kb/s
+  Stream #1:0(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 32 kb/s (default)
+    Metadata:
+      creation_time   : 2024-09-06T22:05:34.000000Z
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libopenh264))
+  Stream #1:0 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+[image2 @ 00000228620fa600] Thread message queue blocking; consider raising the thread_queue_size option (current value: 8)
+[libopenh264 @ 0000022863083d80] Slice count will be set automatically
+[libopenh264 @ 0000022863083d80] [OpenH264] this = 0x00000228633689B0, Warning:bEnableFrameSkip = 0,bitrate can't be controlled for RC_QUALITY_MODE,RC_BITRATE_MODE and RC_TIMESTAMP_MODE without enabling skip frame.
+Output #0, mp4, to 'C:/Users/mlsfn/Pictures/bodyintrotest.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 5000 kb/s, 24 fps, 12288 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 libopenh264
+    Side data:
+      cpb: bitrate max/min/avg: 5000000/0/5000000 buffer size: 0 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      creation_time   : 2024-09-06T22:05:34.000000Z
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc58.134.100 aac
+frame=    1 fps=0.0 q=-0.0 size=       0kB time=00:00:00.00 bitrate=4740.7kbits/s speed=0.000659x    frame=   61 fps=0.0 q=-0.0 size=     256kB time=00:00:02.50 bitrate= 839.0kbits/s speed=3.98x    frame=   77 fps=0.0 q=-0.0 Lsize=     403kB time=00:00:03.16 bitrate=1043.4kbits/s speed= 4.2x    
+video:346kB audio:54kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.802464%
+[aac @ 0000022863085580] Qavg: 1916.568
